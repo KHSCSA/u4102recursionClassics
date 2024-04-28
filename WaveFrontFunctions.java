@@ -43,31 +43,14 @@ public class WaveFrontFunctions {
 
     public static void showMaze(int[][] maze){
         System.out.println("\n");
-        for(int[] row: maze){
-            for(int item: row){
-                if(item == 888) System.out.print("S\t");
-                else if (item==0) System.out.print(" \t");
-                else if (item==999) System.out.print("#\t");
-                else System.out.print(item + "\t");
-            }
-            System.out.println();
-        }
+
     } // close showMaze()
 
 
     public static int checkSpot(int[][] grid, int row, int col, int curWave){
-        if(row>=0 && row<grid.length-1 && col>=0 && col<grid[0].length-1){
-            if(grid[row][col]==999 || grid[row][col]==888) 
-                return 0;
-            // check if open or we have a better number
-            if(grid[row][col]==0 || grid[row][col]>curWave){
-                grid[row][col] = curWave;
-                checkSpot(grid, row-1, col, curWave+1);
-                checkSpot(grid, row, col+1, curWave+1);
-                checkSpot(grid, row+1, col, curWave+1);
-                checkSpot(grid, row, col-1, curWave+1);
-            }
-        }
+
+
+        
         return 0;
     }
 
