@@ -4,6 +4,11 @@ import java.util.*;
 
 public class Grid{
 	public static void main(String[] args){
+		boolean grid[][] = new boolean[10][10];
+		// create(grid);
+		// display(grid);
+
+
 		Scanner input = new Scanner(System.in);
 		System.out.print("\nEnter row value  ===>>  ");
 		int row = input.nextInt();
@@ -11,10 +16,7 @@ public class Grid{
 		System.out.print("Enter col value  ===>>  ");
 		int col = input.nextInt();
 
-		boolean grid[][] = new boolean[10][10];
 
-		// create(grid);
-		// display(grid);
 		// alter(grid,row,col);
 		// display(grid);
 
