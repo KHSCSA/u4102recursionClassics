@@ -27,6 +27,7 @@ public class Grid{
 	public static void create(boolean grid[][]){
 		// 1 = true = black = X
 		Random rand = new Random(12345); // seed for same grid each run
+		// to get random 0 or 1: int myInt = rand.nextInt(1);
 
 
 	}
